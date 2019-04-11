@@ -1,0 +1,21 @@
+.user img{
+  border-radius: 5px;
+}
+
+.user h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user div{
+  margin-top: 10px;
+}
+
+.user button{
+  background-color: hsl(200, 50%, 50%);
+  margin-top: 10px;
+}
+
+.user button:active{
+  margin-top: 14px;
+}

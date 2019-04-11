@@ -1,0 +1,43 @@
+.userlist ul{
+  list-style: none;
+}
+
+.userlist a{
+  text-decoration: none;
+}
+
+.userlist li{
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  border-bottom: 4px solid rgba(0,0,0,0.15);
+  margin-bottom: 10px;
+}
+
+.userlist a:first-child li:active{
+  border: none;
+  margin-top: 4px;
+}
+
+.userlist a:not(:first-child) li:active{
+  border: none;
+  margin-top: 14px;
+}
+
+.userlist button{
+  background-color: hsl(200, 50%, 50%);
+}
+
+.userlist button:not(:first-child){
+  margin-top: 10px;
+}
+
+.userlist button:not(:first-child):active{
+  margin-top: 14px;
+}
+
+.buttonWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,24 @@
+.edituser label{
+  display: block;
+  width: calc(100% - 20px);
+}
+
+.edituser input{
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-top: 4px solid rgba(0,0,0,0.15);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.edituser button:first-of-type{
+  margin-right: 10px;
+  background-color: hsl(100, 50%, 50%);
+}
+
+.edituser button:last-of-type{
+  background-color: hsl(0, 50%, 50%);
+}

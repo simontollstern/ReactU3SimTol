@@ -1,0 +1,42 @@
+.card{
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.75);
+  min-width: 300px;
+  border-bottom: 4px solid rgba(0,0,0,0.15);
+}
+
+.card > div{
+  padding: 10px;
+}
+
+.card button{
+  border: none;
+  border-bottom: 4px solid rgba(0,0,0,0.15);
+  background-color: #777;
+  padding: 10px 20px;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.card button:active{
+  border: none;
+  margin-top: 4px;
+}
+
+.infoWrapper{
+  border-top: 1px solid #eee;
+}
+
+.infoWrapper p{
+  margin-bottom: 10px;
+}
+
+.buttonWrapper{
+  display: flex;
+  justify-content: flex-end;
+}

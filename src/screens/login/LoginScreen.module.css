@@ -1,0 +1,27 @@
+.loginScreen input[type="text"]{
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-top: 4px solid rgba(0,0,0,0.15);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  outline: none;
+}
+
+.loginScreen input[type="submit"]{
+  border: none;
+  border-bottom: 4px solid rgba(0,0,0,0.15);
+  padding: 10px 20px;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: hsl(100, 50%, 50%);
+}
+
+.loginScreen input[type="submit"]:active{
+  border: none;
+  margin-top: 4px;
+}

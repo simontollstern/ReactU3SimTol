@@ -1,0 +1,12 @@
+.user{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user.red{
+  color: hsl(0, 50%, 50%);
+}
+
+.user.green{
+  color: hsl(100, 50%, 50%);
+}
