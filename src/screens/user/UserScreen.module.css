@@ -1,3 +1,8 @@
+.user{
+  display: inline-flex;
+  text-align: left;
+}
+
 .user img{
   border-radius: 5px;
 }
@@ -7,10 +12,6 @@
   margin-bottom: 10px;
 }
 
-.user div{
-  margin-top: 10px;
-}
-
 .user button{
   background-color: hsl(200, 50%, 50%);
   margin-top: 10px;
@@ -18,4 +19,8 @@
 
 .user button:active{
   margin-top: 14px;
+}
+
+.user div div div div{
+  margin-top: 10px;
 }

@@ -14,22 +14,25 @@ class EditUser extends Component{
     }
   }
 
-  // Updates the state with the value from the input field
+  // Updates the nameField state with the value from the 'nameField' input
   updateNameField = (e) => {
     this.setState({ nameField: e.target.value });
   }
 
-  // Updates the state with the value from the input field
+  // Updates the usernameField state with the value from the 'usernameField' input
   updateUsernameField = (e) => {
     this.setState({ usernameField: e.target.value });
   }
 
-  // Updates the state with the value from the input field
+  // Updates the emailField state with the value from the 'emailField' input
   updateEmailField = (e) => {
     this.setState({ emailField: e.target.value });
   }
 
-  // Sends an event (with the input from state) to the Dashboard component to add a new user
+  // Runs the fetch function from withHttpRequests that adds a user (with data
+  // from the input fields). Then sends an event to Dashboard which tells it
+  // to update the list.
+  // Also clears the fields
   addUser = (e) => {
     e.preventDefault();
     if(this.state.inputValue !== ''){

@@ -13,11 +13,12 @@ class Dashboard extends Component{
     super(props);
     this.state = {
       users: [],
-      usersToggled: true,
       colorToggled: false
     }
   }
 
+  // Runs the fetch function from withHttpRequests that gets all users
+  // and sets the state to the data that is returned
   getUsers = () => {
     this.props.getUsers()
     .then(res => res.json())
@@ -28,11 +29,6 @@ class Dashboard extends Component{
 
   componentDidMount(){
     this.getUsers();
-  }
-
-  // Toggle between active and inactive users
-  toggleUsers = () => {
-    this.setState({ usersToggled: !this.state.usersToggled });
   }
 
   // Toggle between 2 colors (true/false)
@@ -49,7 +45,7 @@ class Dashboard extends Component{
     return(
       <div className={style.dashboard}>
         <Card>
-          <UserList onToggleUsers={this.toggleUsers} onToggleColor={this.toggleColor} usersToggled={this.state.usersToggled}>
+          <UserList onToggleColor={this.toggleColor} usersToggled={this.state.usersToggled}>
             {this.state.users.map((user, key) => {
               return <Link key={key} to={`/user/${user.id}`}><User name={user.name} colorToggled={this.state.colorToggled} /></Link>
             })}

@@ -18,14 +18,15 @@ function UserScreen(props){
     });
   });
 
+  // Toggles the state which controls if the address is hidden or not
   const toggleAddress = () => {
     setAddressToggled(!addressToggled);
   }
 
   if(props.match.params.id){
     return(
-      <Card>
-        <div className={style.user}>
+      <div className={style.user}>
+        <Card>
           <img src="http://placekitten.com/280/140" alt="placekitten" />
           <h1>{user.username}</h1>
           <p>{user.name}</p>
@@ -38,14 +39,16 @@ function UserScreen(props){
             </div>
           }
           <button onClick={toggleAddress}>{addressToggled ? 'Hide address' : 'Show address'}</button>
-        </div>
-      </Card>
+        </Card>
+      </div>
     );
   }
   return(
-    <Card>
-      <p>No user is shown because no params were sent</p>
-    </Card>
+    <div className={style.user}>
+      <Card>
+        <p>No user is shown because no params were sent</p>
+      </Card>
+    </div>
   );
 }
 

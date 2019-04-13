@@ -14,14 +14,14 @@ class LoginScreen extends Component{
 
   render(){
     return(
-      <Card info="Enter a username and log in">
-        <div className={style.loginScreen}>
+      <div className={style.loginScreen}>
+        <Card info="Enter a username and log in">
           <form onSubmit={this.redirect}>
             <input type="text" />
             <input type="submit" value="Log in" />
           </form>
-        </div>
-      </Card>
+        </Card>
+      </div>
     );
   }
 }
