@@ -51,13 +51,11 @@ class EditUser extends Component{
           }
         }
       }
+      this.setState({ nameField: '', usernameField: '', emailField: '' });
       this.props.addUser(newUser)
       .then(() => {
         this.props.onAddUser();
       });
-      this.setState({ nameField: '' });
-      this.setState({ usernameField: '' });
-      this.setState({ emailField: '' });
     }
   }
 
@@ -72,15 +70,15 @@ class EditUser extends Component{
         <form onSubmit={e => this.addUser(e)}>
           <label>
             <p>Name:</p>
-            <input value={this.state.inputValue} onChange={e => this.updateNameField(e)} />
+            <input value={this.state.nameField} onChange={e => this.updateNameField(e)} />
           </label>
           <label>
             <p>Username:</p>
-            <input value={this.state.inputValue} onChange={e => this.updateUsernameField(e)} />
+            <input value={this.state.usernameField} onChange={e => this.updateUsernameField(e)} />
           </label>
           <label>
             <p>E-mail:</p>
-            <input value={this.state.inputValue} onChange={e => this.updateEmailField(e)} />
+            <input value={this.state.emailField} onChange={e => this.updateEmailField(e)} />
           </label>
         </form>
         <button onClick={e => this.addUser(e)}>Add user</button>
